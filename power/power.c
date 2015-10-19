@@ -155,6 +155,19 @@ static void set_feature(struct power_module *module, feature_t feature, int stat
     }
 }
 
+static void set_feature(struct power_module *module, feature_t feature, int state)
+{
+    switch (feature) {
+#ifdef TAP_TO_WAKE_NODE
+        case POWER_FEATURE_DOUBLE_TAP_TO_WAKE:
+            sysfs_write(TAP_TO_WAKE_NODE, state ? "1" : "0");
+            break;
+#endif
+        default:
+            break;
+    }
+}
+
 static int power_device_open(const hw_module_t* module, const char* name,
         hw_device_t** device)
 {
