@@ -109,6 +109,12 @@ service wcnss-service /vendor/bin/wcnss_service
     group system wifi radio
     oneshot
 
+service vendor.power_off_alarm /vendor/bin/power_off_alarm
+    class core
+    group system
+    disabled
+    oneshot
+
 # imsqmidaemon starts with root and UID will be downgraded to SYSTEM.
 service vendor.imsqmidaemon /vendor/bin/imsqmidaemon
     class main
@@ -168,6 +174,7 @@ on charger
     write /sys/devices/system/cpu/cpu2/online 0
     write /sys/devices/system/cpu/cpu3/online 0
     write /sys/module/lpm_levels/parameters/sleep_disabled 0
+    start vendor.power_off_alarm
 
 on boot
 	write /dev/cpuset/top-app/cpus 0-7

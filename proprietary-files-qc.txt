@@ -25,6 +25,7 @@ vendor/lib/rfsa/adsp/libfastcvadsp_skel.so
 # Alarm - from TA-1024
 -framework/vendor.qti.hardware.alarm-V1.0-java.jar
 -vendor/app/PowerOffAlarm/PowerOffAlarm.apk
+vendor/bin/power_off_alarm
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
 vendor/lib/hw/vendor.qti.hardware.alarm@1.0-impl.so
