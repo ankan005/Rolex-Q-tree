@@ -131,6 +131,9 @@ ifeq ($(HOST_OS),linux)
 endif
 WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY ?= true
 
+#Dt2w
+TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/wake_gesture"
+
 # Display
 BOARD_USES_ADRENO := true
 
