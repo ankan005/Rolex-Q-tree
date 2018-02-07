@@ -153,6 +153,13 @@ on property:sys.powerctl=*
     stop vendor.per_proxy
     stop vendor.ims_rtp_daemon
 
+on charger
+    write /sys/devices/system/cpu/cpu2/online 0
+    write /sys/devices/system/cpu/cpu3/online 0
+    write /sys/module/lpm_levels/parameters/sleep_disabled 0
+    start vendor.hvdcp_opti
+    start thermal-engine
+
 on property:sys.boot_completed=1
    # Enable ZRAM on boot_complete
    swapon_all /vendor/etc/fstab.qcom
