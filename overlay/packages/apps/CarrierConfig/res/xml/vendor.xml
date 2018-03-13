@@ -1259,6 +1259,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="allow_add_call_during_video_call" value="false" />
         <boolean name="allow_holding_video_call" value="false" />
         <boolean name="vilte_data_is_metered_bool" value="false" />
+        <boolean name="identify_high_definition_calls_in_call_log_bool" value="true" />
     </carrier_config>
 
     <carrier_config mcc="460" mnc="01">
@@ -1333,6 +1334,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="allow_add_call_during_video_call" value="false" />
         <boolean name="allow_holding_video_call" value="false" />
         <boolean name="vilte_data_is_metered_bool" value="false" />
+        <boolean name="identify_high_definition_calls_in_call_log_bool" value="true" />
     </carrier_config>
 
     <carrier_config mcc="460" mnc="03">
@@ -1464,6 +1466,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="allow_add_call_during_video_call" value="false" />
         <boolean name="allow_holding_video_call" value="false" />
         <boolean name="vilte_data_is_metered_bool" value="false" />
+        <boolean name="identify_high_definition_calls_in_call_log_bool" value="true" />
     </carrier_config>
 
     <carrier_config mcc="460" mnc="08">
@@ -1511,6 +1514,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="allow_add_call_during_video_call" value="false" />
         <boolean name="allow_holding_video_call" value="false" />
         <boolean name="vilte_data_is_metered_bool" value="false" />
+        <boolean name="identify_high_definition_calls_in_call_log_bool" value="true" />
     </carrier_config>
 
     <carrier_config mcc="460" mnc="09">
