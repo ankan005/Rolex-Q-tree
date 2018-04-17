@@ -123,11 +123,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     camera.msm8937 \
     libmm-qcamera \
+    libshim_libmmcamera \
     Snap
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service
+
+# Camera Shim
+TARGET_LD_SHIM_LIBS += \
+    /system/vendor/lib/libmmcamera_ppeiscore.so|libshim_libmmcamera.so
 
 # Configstore
 PRODUCT_PACKAGES += \
