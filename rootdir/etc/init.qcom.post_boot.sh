@@ -308,14 +308,6 @@ else
         adj_1="${adj_series#*,}"
         set_almk_ppr_adj="${adj_1%%,*}"
 
-        # PPR and ALMK should not act on HOME adj and below.
-        # Normalized ADJ for HOME is 6. Hence multiply by 6
-        # ADJ score represented as INT in LMK params, actual score can be in decimal
-        # Hence add 6 considering a worst case of 0.9 conversion to INT (0.9*6).
-        # For uLMK + Memcg, this will be set as 6 since adj is zero.
-        set_almk_ppr_adj=$(((set_almk_ppr_adj * 6) + 6))
-        echo $set_almk_ppr_adj > /sys/module/lowmemorykiller/parameters/adj_max_shift
-
         # Calculate vmpressure_file_min as below & set for 64 bit:
         # vmpressure_file_min = last_lmk_bin + (last_lmk_bin - last_but_one_lmk_bin)
         if [ "$arch_type" == "aarch64" ]; then
@@ -341,7 +333,7 @@ else
 
         # Enable adaptive LMK for all targets &
         # use Google default LMK series for all 64-bit targets >=2GB.
-        echo 1 > /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk
+        echo 0 > /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk
 
         # Enable oom_reaper
         if [ -f /sys/module/lowmemorykiller/parameters/oom_reaper ]; then
@@ -393,6 +385,15 @@ function enable_memory_features()
         setprop ro.vendor.qti.sys.fw.bservice_enable true
         setprop ro.vendor.qti.sys.fw.bservice_limit 5
         setprop ro.vendor.qti.sys.fw.bservice_age 5000
+
+        # PPR and ALMK should not act on HOME adj and below.
+        # Normalized ADJ for HOME is 6. Hence multiply by 6
+        # ADJ score represented as INT in LMK params, actual score can be in decimal
+        # Hence add 6 considering a worst case of 0.9 conversion to INT (0.9*6).
+        # For uLMK + Memcg, this will be set as 6 since adj is zero.
+        set_almk_ppr_adj=$(((set_almk_ppr_adj * 6) + 6))
+        echo $set_almk_ppr_adj > /sys/module/lowmemorykiller/parameters/adj_max_shift
+        echo 1 > /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk
 
         #Enable Delay Service Restart
         setprop ro.vendor.qti.am.reschedule_service true
