@@ -107,6 +107,10 @@ vendor/lib64/libjni_dualcamera.so
 -vendor/lib/libts_detected_face_hal.so
 -vendor/lib/libts_face_beautify_hal.so
 
+# Camera TNR - from prada (Redmi 4)
+vendor/lib/libllvd_sw_tnr.so
+vendor/lib/libmmcamera_sw_tnr.so
+
 # Camera actuators - from MIUI Stable - V10.2.3.0.NCCMIXM
 vendor/lib/libactuator_ad5816g.so
 vendor/lib/libactuator_ad5823.so
