@@ -35,7 +35,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 bluetooth.hfp.client=1 \
 ro.qualcomm.bt.hci_transport=smd \
 ro.bluetooth.hfp.ver=1.7 \
-qcom.bluetooth.soc=smd
+vendor.qcom.bluetooth.soc=smd
 
 # Boot
 PRODUCT_PROPERTY_OVERRIDES += \
