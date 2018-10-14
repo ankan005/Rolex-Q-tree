@@ -224,6 +224,9 @@ TARGET_RIL_VARIANT := caf
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/fstab.qcom
 
+# Root
+BOARD_ROOT_EXTRA_FOLDERS := persist
+
 # Security patch level
 VENDOR_SECURITY_PATCH := 2018-09-01
 
