@@ -164,6 +164,7 @@ vendor.video.disable.ubwc=1
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.vendor.gt_library=libqti-gt.so \
 ro.vendor.at_library=libqti-at.so \
+vendor.perf.gestureflingboost.enable=true \
 ro.vendor.extension_library=libqti-perfd-client.so \
 ro.vendor.qti.am.reschedule_service=true \
 ro.vendor.qti.core_ctl_min_cpu=2 \
