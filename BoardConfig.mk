@@ -175,10 +175,6 @@ DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/framework_manifest.xml
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE   := $(DEVICE_PATH)/compatibility_matrix.xml
 
-# Init
-TARGET_INIT_VENDOR_LIB := libinit_rolex
-TARGET_RECOVERY_DEVICE_MODULES := libinit_rolex
-
 # Hack for remove liblight
 $(shell rm -rf hardware/qcom/display-caf/msm8996/liblight)
 
