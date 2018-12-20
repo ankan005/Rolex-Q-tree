@@ -2040,7 +2040,7 @@ case "$target" in
                 fi
                 echo 960000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
                 # re-enable thermal core_control now
-                #echo 1 > /sys/module/msm_thermal/core_control/enabled
+                echo 1 > /sys/module/msm_thermal/core_control/enabled
 
                 # Disable L2-GDHS low power modes
                 echo N > /sys/module/lpm_levels/perf/perf-l2-gdhs/idle_enabled
@@ -2148,15 +2148,15 @@ case "$target" in
                 echo 83 > /proc/sys/kernel/sched_downmigrate
 
                 # Enable core control
-                #echo 2 > /sys/devices/system/cpu/cpu0/core_ctl/min_cpus
-                #echo 4 > /sys/devices/system/cpu/cpu0/core_ctl/max_cpus
-                #echo 68 > /sys/devices/system/cpu/cpu0/core_ctl/busy_up_thres
-                #echo 40 > /sys/devices/system/cpu/cpu0/core_ctl/busy_down_thres
-                #echo 100 > /sys/devices/system/cpu/cpu0/core_ctl/offline_delay_ms
-                #echo 1 > /sys/devices/system/cpu/cpu0/core_ctl/is_big_cluster
+                echo 2 > /sys/devices/system/cpu/cpu0/core_ctl/min_cpus
+                echo 4 > /sys/devices/system/cpu/cpu0/core_ctl/max_cpus
+                echo 68 > /sys/devices/system/cpu/cpu0/core_ctl/busy_up_thres
+                echo 40 > /sys/devices/system/cpu/cpu0/core_ctl/busy_down_thres
+                echo 100 > /sys/devices/system/cpu/cpu0/core_ctl/offline_delay_ms
+                echo 1 > /sys/devices/system/cpu/cpu0/core_ctl/is_big_cluster
 
                 # re-enable thermal core_control
-                #echo 1 > /sys/module/msm_thermal/core_control/enabled
+                echo 1 > /sys/module/msm_thermal/core_control/enabled
 
                 # Enable dynamic clock gating
                 echo 1 > /sys/module/lpm_levels/lpm_workarounds/dynamic_clock_gating
@@ -2251,13 +2251,13 @@ case "$target" in
                      echo 1 > /sys/devices/system/cpu/cpu7/online
 
                      # Enable core control
-                     #echo 2 > /sys/devices/system/cpu/cpu0/core_ctl/min_cpus
-                     #echo 4 > /sys/devices/system/cpu/cpu0/core_ctl/max_cpus
-                     #echo 68 > /sys/devices/system/cpu/cpu0/core_ctl/busy_up_thres
-                     #echo 40 > /sys/devices/system/cpu/cpu0/core_ctl/busy_down_thres
-                     #echo 100 > /sys/devices/system/cpu/cpu0/core_ctl/offline_delay_ms
-                     #echo 1 > /sys/devices/system/cpu/cpu0/core_ctl/is_big_cluster
-                     #echo 4 > /sys/devices/system/cpu/cpu0/core_ctl/task_thres
+                     echo 2 > /sys/devices/system/cpu/cpu0/core_ctl/min_cpus
+                     echo 4 > /sys/devices/system/cpu/cpu0/core_ctl/max_cpus
+                     echo 68 > /sys/devices/system/cpu/cpu0/core_ctl/busy_up_thres
+                     echo 40 > /sys/devices/system/cpu/cpu0/core_ctl/busy_down_thres
+                     echo 100 > /sys/devices/system/cpu/cpu0/core_ctl/offline_delay_ms
+                     echo 1 > /sys/devices/system/cpu/cpu0/core_ctl/is_big_cluster
+                     echo 4 > /sys/devices/system/cpu/cpu0/core_ctl/task_thres
 
                      # Big cluster min frequency adjust settings
                      if [ -f /sys/module/big_cluster_min_freq_adjust/parameters/min_freq_cluster ]; then
