@@ -679,3 +679,27 @@ vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 vendor/bin/hw/android.hardware.drm@1.0-service.widevine
 vendor/etc/init/android.hardware.drm@1.0-service.widevine.rc
 vendor/lib/libwvhidl.so
+
+# Wi-Fi Display
+-priv-app/WfdService/WfdService.apk 
+-framework/WfdCommon.jar
+bin/wfdservice 
+etc/init/wfdservice.rc
+etc/wfdconfig.xml 
+etc/wfdconfigsink.xml 
+lib/com.qualcomm.qti.wifidisplayhal@1.0.so 
+lib/libFileMux.so
+lib/extractors/libmmparser.so 
+lib/libmmparser_lite.so
+lib64/libFileMux.so 
+lib64/libmmparser_lite.so
+lib64/extractors/libmmparser.so 
+vendor/bin/wifidisplayhalservice 
+vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc 
+vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so 
+vendor/lib/libwfdcommonutils_proprietary.so 
+vendor/lib/libwfdhaldsmanager.so 
+vendor/lib/libwfdhdcpcp.so
+vendor/lib/libwfdmmservice.so 
+vendor/lib/libwfdmodulehdcpsession.so 
+vendor/lib64/libwfdhdcpcp.so

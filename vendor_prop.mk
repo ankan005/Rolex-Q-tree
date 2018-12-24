@@ -93,7 +93,8 @@ vendor.display.disable_skip_validate=1 \
 vendor.display.perf_hint_window=50 \
 video.accelerate.hw=1 \
 debug.hwui.use_buffer_age=false \
-persist.graphics.vulkan.disable=true
+persist.graphics.vulkan.disable=true \
+persist.debug.wfd.enable=1
 
 # Property to enable display default color mode
 PRODUCT_PROPERTY_OVERRIDES += \
