@@ -1,3 +1,4 @@
+
 # ADSP - from tissot - PKQ1.180917.001.V10.0.4.0.PDHMIXM
 vendor/bin/adsprpcd|3d1e7e14dfc2f2468a06e0af9c0d34f4bda28d4b
 vendor/lib/libadsprpc.so|a2ff69f96a9242d4be0fe5cae2475c23294f937a
@@ -265,7 +266,6 @@ vendor/bin/msm_irqbalance|bf933b58332cf94fe4a2072bc3e976a6a82efe3c
 vendor/bin/hw/vendor.qti.hardware.perf@1.0-service|3f4cf13499019e7e3747679220b280f4f204b8de
 vendor/etc/init/vendor.qti.hardware.perf@1.0-service.rc|b50182aadab2e31409df61c523d0fb914a394e43
 vendor/etc/perf/commonresourceconfigs.xml|20280e40ca43784316e96be09fe2d2296d79e972
-vendor/etc/perf/perfboostsconfig.xml|7e21bd6dd6fcbbbfc132bccef782ca8bcbe88184
 vendor/etc/perf/targetconfig.xml|1e240759319696ae5920a35d675317b7a4456685
 vendor/etc/perf/targetresourceconfigs.xml|f905a4f59091686d732d7121a9066e79d395056d
 vendor/lib/libperfgluelayer.so|3e6074dca57a25dd07c6398e8a7fc89e7a1d3f2a
@@ -400,3 +400,4 @@ vendor/lib64/libwvhidl.so|a3444ac0deb8144a08ba2ed1dad2f2369096c7af
 
 # Wi-Fi - from tissot PKQ1.180917.001
 vendor/bin/wcnss_service|f8ecd38a41b6b7f832380b489e0c9804c34174d8
+
