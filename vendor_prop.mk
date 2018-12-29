@@ -66,7 +66,6 @@ debug.egl.hw=1 \
 debug.gralloc.enable_fb_ubwc=1 \
 debug.sf.hw=1 \
 debug.sf.enable_hwc_vds=1 \
-debug.sf.latch_unsignaled=1 \
 debug.sf.recomputecrop=0 \
 debug.sf.gpu_comp_tiling=1 \
 debug.performance.tuning=1 \
