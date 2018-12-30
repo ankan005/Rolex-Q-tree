@@ -52,7 +52,7 @@ PRODUCT_COPY_FILES += \
 
 # Ambient display
 PRODUCT_PACKAGES += \
-    XiaomiDoze
+    XiaomiParts
 
 # ANT+
 PRODUCT_PACKAGES += \
