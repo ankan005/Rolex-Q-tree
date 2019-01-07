@@ -327,6 +327,7 @@ PRODUCT_PACKAGES += \
     init.qcom.graphics.sh \
     init.qcom.usb.sh \
     init.qcom.sh \
+    init.qcom.early_boot.sh \
     move_time_data.sh \
     move_wifi_data.sh
 
