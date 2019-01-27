@@ -22,7 +22,7 @@ def FullOTA_InstallEnd(info):
   ImportBkpBootloaderFirmware(info)
 
 def ImportMainBootloaderFirmware(info):
-  info.script.AppendExtra('ui_print("Flashing miui_HM4AGlobal_V10.1.1.0.NCCMIFI Firmware.");')
+  info.script.AppendExtra('ui_print("Flashing miui_HM4AGlobal_V10.2.1.0.NCCMIXM_cec4b49727_7.1 Firmware.");')
   info.script.AppendExtra('package_extract_file("install/firmware-update/cmnlib64.mbn", "/dev/block/bootdevice/by-name/cmnlib64");')
   info.script.AppendExtra('package_extract_file("install/firmware-update/cmnlib.mbn", "/dev/block/bootdevice/by-name/cmnlib");')
   info.script.AppendExtra('package_extract_file("install/firmware-update/rpm.mbn", "/dev/block/bootdevice/by-name/rpm");')
@@ -37,7 +37,7 @@ def ImportMainBootloaderFirmware(info):
   info.script.AppendExtra('package_extract_file("install/firmware-update/splash.img", "/dev/block/bootdevice/by-name/splash");')
 
 def ImportBkpBootloaderFirmware(info):
-  info.script.AppendExtra('ui_print("Flashing Backup miui_HM4AGlobal_V10.1.1.0.NCCMIFI Firmware.");')
+  info.script.AppendExtra('ui_print("Flashing Backup miui_HM4AGlobal_V10.2.1.0.NCCMIXM_cec4b49727_7.1 Firmware.");')
   info.script.AppendExtra('package_extract_file("install/firmware-update/cmnlib64.mbn", "/dev/block/bootdevice/by-name/cmnlib64bak");')
   info.script.AppendExtra('package_extract_file("install/firmware-update/cmnlib.mbn", "/dev/block/bootdevice/by-name/cmnlibbak");')
   info.script.AppendExtra('package_extract_file("install/firmware-update/rpm.mbn", "/dev/block/bootdevice/by-name/rpmbak");')
