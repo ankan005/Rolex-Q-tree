@@ -476,17 +476,16 @@ vendor/etc/init/vendor.display.color@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc
 vendor/lib64/libdisp-aba.so
 vendor/lib64/vendor.display.color@1.0.so
+vendor/lib64/vendor.display.color@1.1.so
+vendor/lib64/vendor.display.color@1.2.so
 vendor/lib64/vendor.display.postproc@1.0.so
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 vendor/lib/libdisp-aba.so
 vendor/lib/vendor.display.color@1.0.so
+vendor/lib/vendor.display.color@1.1.so
+vendor/lib/vendor.display.color@1.2.so
 vendor/lib/vendor.display.postproc@1.0.so
 vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so
-
-# Postprocessing - from riva - OPM1.171019.026 - 8.11.6
--vendor/app/colorservice/colorservice.apk
-lib/libsd_sdk_display.so:vendor/lib/libsd_sdk_display.so
-lib64/libsd_sdk_display.so:vendor/lib64/libsd_sdk_display.so
 
 # QMI - from daisy - PKQ1.180917.001 V10.0.1.0.PDLMIFJ
 etc/permissions/qti_libpermissions.xml|ef3c88495f2f61a2d16e1445113a9d80f8db0e0a
