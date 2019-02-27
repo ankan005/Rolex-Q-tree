@@ -176,6 +176,9 @@ on boot
 
     chown wifi wifi /sys/module/wlan/parameters/fwpath
 
+    # Create vpp directory
+    mkdir /mnt/vendor/persist/vpp 0770 media media
+
     chown system system /sys/class/backlight/panel0-backlight/brightness
     chown system system /sys/class/backlight/panel0-backlight/max_brightness
 
