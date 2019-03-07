@@ -237,9 +237,6 @@ on post-fs-data
     # Create /data/vendor/tzstorage directory for SFS listener
     mkdir /data/vendor/tzstorage 0770 system system
 
-    # Create directory for tftp
-    mkdir /data/vendor/tombstones 0771 system system
-
     # Change ownership to system
     chown system system /data/vendor/tombstones
 
