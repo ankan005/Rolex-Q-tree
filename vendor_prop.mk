@@ -54,7 +54,7 @@ persist.vendor.qti.telephony.vt_cam_interface=1
 
 # CNE/DPM
 PRODUCT_PROPERTY_OVERRIDES += \
-persist.cne.feature=1
+persist.vendor.cne.feature=1
 
 # Coresight
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -131,11 +131,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 ro.min.fling_velocity=160 \
 ro.max.fling_velocity=20000
 
-# GPS
-#PRODUCT_PROPERTY_OVERRIDES += \
-#ro.location.osnlp.package=com.google.android.gms \
-#ro.location.osnlp.region.package=""
-
 #LKMD
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.lmk.low=1001 \
@@ -192,10 +187,6 @@ persist.rild.nitz_short_ons_1="" \
 persist.rild.nitz_short_ons_2="" \
 persist.rild.nitz_short_ons_3=""
 
-# Optimize
-PRODUCT_PROPERTY_OVERRIDES += \
-ro.sys.fw.dex2oat_thread_count=4
-
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
 rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
@@ -208,7 +199,6 @@ persist.dbg.ims_volte_enable=1 \
 persist.dbg.volte_avail_ovr=1 \
 persist.dbg.vt_avail_ovr=1 \
 persist.dbg.wfc_avail_ovr=0 \
-persist.radio.apm_sim_not_pwdn=1 \
 persist.radio.calls.on.ims=0 \
 persist.radio.csvt.enabled=false \
 persist.radio.hw_mbn_update=0 \
