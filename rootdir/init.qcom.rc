@@ -61,7 +61,26 @@ on early-boot
     write /sys/kernel/boot_adsp/boot 1
     write /sys/kernel/boot_cdsp/boot 1
     write /sys/kernel/boot_slpi/boot 1
-    chown root audio /sys/kernel/boot_adsp/boot
+
+    # for backward compatibility
+    chown system system /persist/sensors
+    chown system system /persist/sensors/registry
+    chown system system /persist/sensors/registry/registry
+    chown system system /persist/sensors/registry/registry/sensors_registry
+    chown system system /persist/sensors/sensors_settings
+    chown system system /persist/sensors/registry/config
+    chmod 0664 /persist/sensors/sensors_settings
+
+    chown system system /mnt/vendor/persist/sensors
+    chown system system /mnt/vendor/persist/sensors/sns.reg
+    chown system system /mnt/vendor/persist/sensors/sensors_list.txt
+    chown system system /mnt/vendor/persist/sensors/registry
+    chown system system /mnt/vendor/persist/sensors/registry/registry
+    chown system system /mnt/vendor/persist/sensors/registry/registry/sensors_registry
+    chown system system /mnt/vendor/persist/sensors/sensors_settings
+    chown system system /mnt/vendor/persist/sensors/registry/sns_reg_config
+    chown system system /mnt/vendor/persist/sensors/registry/config
+    chmod 0664 /mnt/vendor/persist/sensors/sensors_settings
 
 on boot
     chown system system /sys/bus/i2c/devices/3-0038/set_cover_mode
@@ -151,6 +170,16 @@ on boot
     chown root system /sys/class/leds/red/blink
     chown root system /sys/class/leds/green/blink
     chown root system /sys/class/leds/blue/blink
+
+    # Allow access to sensors device attributes
+    chown system system /sys/class/sensors/MPU6050-accel/enable
+    chown system system /sys/class/sensors/MPU6050-accel/poll_delay
+    chown system system /sys/class/sensors/MPU6050-gyro/enable
+    chown system system /sys/class/sensors/MPU6050-gyro/poll_delay
+    chown system system /sys/class/sensors/apds9930-light/enable
+    chown system system /sys/class/sensors/apds9930-light/poll_delay
+    chown system system /sys/class/sensors/apds9930-proximity/enable
+    chown system system /sys/class/sensors/apds9930-proximity/poll_delay
 
     # IR blaster
     chown root system /sys/class/leds/infrared/transmit
@@ -488,11 +517,10 @@ service graphics-sh /vendor/bin/init.qcom.graphics.sh
     disabled
     oneshot
 
-service vendor.sensors /vendor/bin/sensors.qcom
+service vendor.sensors.qti /vendor/bin/sensors.qti
     class core
-    user root
-    group root
-    writepid /dev/cpuset/system-background/tasks
+    user system
+    group system
 
 on property:ro.vendor.use_data_netmgrd=false
     stop vendor.netmgrd
