@@ -324,16 +324,18 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fstab.qcom \
     init.qcom.rc \
-    init.qcom.sh \
     init.qcom.usb.rc \
-    init.qcom.usb.sh \
     init.target.rc \
-    init.qcom.graphics.sh \
     ueventd.qcom.rc
 
 PRODUCT_PACKAGES += \
     init.baseband.sh \
-    init.qcom.post_boot.sh
+    init.qcom.post_boot.sh \
+    init.qcom.graphics.sh \
+    init.qcom.usb.sh \
+    init.qcom.sh \
+    move_time_data.sh \
+    move_wifi_data.sh
 
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := device/xiaomi/rolex
