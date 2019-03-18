@@ -394,7 +394,6 @@ service iop /vendor/bin/iop
     group root
     disabled
     socket iop seqpacket 0666 root system
-    writepid /dev/cpuset/system-background/tasks
 
 on property:ro.vendor.iocgrp.config=1
     mkdir /dev/blkio
@@ -436,13 +435,11 @@ service vendor.cnd /vendor/bin/cnd
     class main
     user system
     group system wifi inet radio wakelock net_admin
-    writepid /dev/cpuset/system-background/tasks
 
 service dpmQmiMgr /vendor/bin/dpmQmiMgr
     class main
     user system
     group system
-    writepid /dev/cpuset/system-background/tasks
 
 service irsc_util /vendor/bin/irsc_util "/vendor/etc/sec_config"
     class core
@@ -454,13 +451,11 @@ service vendor.rmt_storage /vendor/bin/rmt_storage
     user root
     shutdown critical
     ioprio rt 0
-    writepid /dev/cpuset/system-background/tasks
 
 service vendor.tftp_server /vendor/bin/tftp_server
    class core
    user root
    group root system
-   writepid /dev/cpuset/system-background/tasks
 
 on property:vendor.wc_transport.start_hci=true
     start vendor.start_hci_filter
@@ -491,20 +486,17 @@ on property:bluetooth.hciattach=false
 
 service vendor.netmgrd /vendor/bin/netmgrd
     class main
-    writepid /dev/cpuset/system-background/tasks
 
 service vendor.ipacm /vendor/bin/ipacm
     class main
     user radio
     group radio inet
-    writepid /dev/cpuset/system-background/tasks
 
 service vendor.dataqti /vendor/bin/qti
     class main
     user radio
     group radio oem_2901 diag usb net_admin
     disabled
-    writepid /dev/cpuset/system-background/tasks
 
 service vendor.dataadpl /vendor/bin/adpl
     class main
@@ -555,7 +547,6 @@ service loc_launcher /vendor/bin/loc_launcher
     class late_start
     user gps
     group gps
-    writepid /dev/cpuset/system-background/tasks
 
 service qcom-sh /vendor/bin/init.qcom.sh
     class late_start
@@ -629,7 +620,6 @@ service time_daemon /vendor/bin/time_daemon
     class main
     user root
     group root
-    writepid /dev/cpuset/system-background/tasks
 
 service vendor.move_time_data /system/bin/move_time_data.sh
     class main
