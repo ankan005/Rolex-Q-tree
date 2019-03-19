@@ -697,23 +697,17 @@ vendor/lib64/vendor.qti.ims.callinfo@1.0.so
 vendor/lib64/com.qualcomm.qti.uceservice@2.0.so
 vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so
 
-# Sensors - from TA-1024
--framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar
-lib/libsensor1.so
-lib/libsensor_reg.so
-lib64/libsensor1.so
-lib64/libsensor_reg.so
-vendor/bin/sensors.qti
+# Sensors - from marmite - OPM5.171019.017 - UOS273C
+vendor/bin/sensors.qcom
+-vendor/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar
 vendor/lib/hw/activity_recognition.msm8937.so
 vendor/lib/libsensor1.so
 vendor/lib/libsensor_reg.so
-vendor/lib/sensor_calibrate.so
 vendor/lib/sensors.ssc.so
 vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so
 vendor/lib64/hw/activity_recognition.msm8937.so
 vendor/lib64/libsensor1.so
 vendor/lib64/libsensor_reg.so
-vendor/lib64/sensor_calibrate.so
 vendor/lib64/sensors.ssc.so
 vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 

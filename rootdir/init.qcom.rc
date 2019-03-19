@@ -509,10 +509,10 @@ service graphics-sh /vendor/bin/init.qcom.graphics.sh
     disabled
     oneshot
 
-service vendor.sensors.qti /vendor/bin/sensors.qti
+service vendor.sensors /vendor/bin/sensors.qcom
     class core
-    user system
-    group system
+    user root
+    group root
 
 on property:ro.vendor.use_data_netmgrd=false
     stop vendor.netmgrd
