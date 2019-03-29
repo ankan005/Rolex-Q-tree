@@ -240,15 +240,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
            </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.qti.hardware.radio.config</name>
-           <version>1.0</version>
-           <interface>
-               <name>IConfig</name>
-               <instance>radioconfig0</instance>
-               <instance>radioconfig1</instance>
-           </interface>
-    </hal>
-    <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.radio.lpa</name>
         <version>1.0</version>
         <interface>
