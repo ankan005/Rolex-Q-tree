@@ -185,6 +185,7 @@ int  power_hint_override(struct power_module *module, power_hint_t hint,
         void *data)
 {
 
+    int ret_val = HINT_NONE;
     switch(hint) {
         case POWER_HINT_VSYNC:
             break;
@@ -200,7 +201,7 @@ int  power_hint_override(struct power_module *module, power_hint_t hint,
             return HINT_HANDLED;
         }
     }
-    return HINT_NONE;
+    return ret_val;
 }
 
 int  set_interactive_override(struct power_module *module, int on)
