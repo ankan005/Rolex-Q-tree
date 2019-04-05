@@ -66,6 +66,7 @@ debug.egl.hw=0 \
 debug.sf.hw=0 \
 debug.sf.disable_hwc_vds=1 \
 debug.sf.recomputecrop=0 \
+debug.sf.latch_unsignaled=1 \
 dev.pm.dyn_samplingrate=1 \
 persist.demo.hdmirotationlock=false \
 persist.hwc.enable_vds=1 \
@@ -226,6 +227,10 @@ ro.vendor.qti.sys.fw.empty_app_percent=50 \
 ro.vendor.qti.sys.fw.trim_empty_percent=100 \
 ro.vendor.qti.sys.fw.trim_cache_percent=100 \
 ro.vendor.qti.sys.fw.trim_enable_memory=2147483648
+
+# UI
+PRODUCT_PROPERTY_OVERRIDES += \
+sys.use_fifo_ui=1
 
 # Usb
 PRODUCT_PROPERTY_OVERRIDES += \
