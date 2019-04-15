@@ -195,25 +195,16 @@ ril.subscription.types=NV,RUIM \
 DEVICE_PROVISIONED=1 \
 ro.telephony.default_network=22,20 \
 ro.telephony.call_ring.multiple=false \
-persist.dbg.ims_volte_enable=1 \
 persist.dbg.volte_avail_ovr=1 \
 persist.dbg.vt_avail_ovr=1 \
-persist.dbg.wfc_avail_ovr=0 \
-persist.radio.calls.on.ims=0 \
-persist.radio.csvt.enabled=false \
-persist.radio.hw_mbn_update=0 \
-persist.radio.jbims=0 \
-persist.radio.mt_sms_ack=20 \
+persist.dbg.wfc_avail_ovr=1 \
 persist.radio.multisim.config=dsds \
-persist.radio.sw_mbn_update=0 \
-persist.radio.videopause.mode=1 \
 persist.radio.schd.cache=3500 \
 persist.vendor.ims.dropset_feature=0 \
 persist.vendor.radio.custom_ecc=1 \
 persist.vendor.radio.rat_on=combine \
 persist.vendor.radio.sib16_support=1 \
 vendor.service.qti.ims.enabled=1 \
-telephony.lteOnCdmaDevice=1 \
 vendor.rild.libpath=/vendor/lib64/libril-qc-qmi-1.so
 
 # RescueParty
@@ -238,7 +229,7 @@ ro.vendor.qti.sys.fw.trim_enable_memory=2147483648
 
 # Usb
 PRODUCT_PROPERTY_OVERRIDES += \
-persist.sys.usb.config.extra=none
+persist.vendor.sys.usb.config.extra=none
 
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
