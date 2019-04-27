@@ -363,10 +363,6 @@ vendor/lib64/libtinyxml2_1.so|9d5179eda8ce70b9a4014b144f9d23d33509fddc
 vendor/lib/libc2d30-a3xx.so|649a72ba81703b671756590b4bfed7a9ce114815
 vendor/lib64/libc2d30-a3xx.so|384acf4120e47094a4fa5445064147b87377ebad
 
-# Graphics (Vulkan) - from TA-1024
-vendor/lib/hw/vulkan.msm8937.so|49f4f7984e6c05495ebab919784bd7f935bb3304
-vendor/lib64/hw/vulkan.msm8937.so|0446ccfd120c36b4e06285a784544f21da3d0274
-
 # Graphics firmware - from daisy - PKQ1.180917.001 V10.0.1.0.PDLMIFJ
 vendor/firmware/a225p5_pm4.fw|02e5fb26c121d388104bc6a0f31811dfa91f1828
 vendor/firmware/a225_pfp.fw|7ba4003796285d36c125fabe453b45d5e21850cc
