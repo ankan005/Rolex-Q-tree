@@ -433,3 +433,6 @@ case "$buildvariant" in
         echo "4 4 1 4" > /proc/sys/kernel/printk
         ;;
 esac
+
+# Remove recovery cache from persist
+rm -rf /mnt/vendor/persist/cache/recovery
