@@ -248,8 +248,6 @@ vendor/lib/hw/gatekeeper.msm8937.so|99c0edc92c074d6e4278032b55425be5d32c8f48
 vendor/lib64/hw/gatekeeper.msm8937.so|964f53fa236bd0e36f0aa12ebf25633bb9ad1b47
 
 # Gatekeeper - from daisy - PKQ1.180917.001 V10.0.1.0.PDLMIFJ
-lib/vendor.qti.hardware.factory@1.0.so|01ddaeb2f25b4acd0365e8b55f44851637e5fefe
-lib64/vendor.qti.hardware.factory@1.0.so|db9891e9fe0172212775df99878483d915970742
 vendor/bin/hw/vendor.qti.hardware.factory@1.0-service|abb9f1668bb73b84cbabdc96e4a42400d5f00121
 vendor/lib/hw/vendor.qti.hardware.factory@1.0-impl.so|8cc521e85873e72c0adf028ed48f6a7a37da9c47
 vendor/lib64/hw/vendor.qti.hardware.factory@1.0-impl.so|38762fa7f535af659c05edcaf34b391a9267bff6
@@ -580,35 +578,6 @@ framework/QtiTelephonyServicelibrary.jar|1df2f89ffb3aedc36e1c2ca7cafbf73a6a06b3f
 framework/qcrilhook.jar|784df5e6aa9df0127700b9a6f1083440ebfac057
 framework/qti-telephony-common.jar|9187f7a9995ba7e65eb99539aba1a5720637c3b3
 vendor/bin/ATFWD-daemon|fe4aac322811c2e025126cded50dd3f12e14e34c
-lib/vendor.qti.hardware.radio.am@1.0.so|9c8ec1cdcc576258966fcd9d2bc18cb273d242b2
-lib/vendor.qti.hardware.radio.ims@1.0.so|a3c3a76b1d49d58429dda812f57878749ed27c92
-lib/vendor.qti.hardware.radio.ims@1.1.so|1c6cd4557f5370fd513440d9eda02d5e0b9fa953
-lib/vendor.qti.hardware.radio.ims@1.2.so|2b18ca26b290a1eab08bdaf519062d5ecd10a3dc
-lib/vendor.qti.hardware.radio.ims@1.3.so|2ac54e5b1baa7e7de3f9e01133a56f2677f5c5a4
-lib/vendor.qti.hardware.radio.ims@1.4.so|fa024c25c0e6b6ea51f306d183c5d61d1bd00b55
-lib/vendor.qti.hardware.radio.lpa@1.0.so|b5daf92447b8ea4930d6acbe0e4857da1ec7d7bb
-lib/vendor.qti.hardware.radio.qcrilhook@1.0.so|17ef9c7be46a266f7d203327199519e18dbfb608
-lib/vendor.qti.hardware.radio.qtiradio@1.0.so|e7793ee4c0189175e11a8bcb5cb20cfda40ddb56
-lib/vendor.qti.hardware.radio.qtiradio@2.0.so|e526683200c51287b542b326f3f9fa057ab22c23
-lib/vendor.qti.hardware.radio.uim@1.0.so|a32848b4522463165b3d2be30244c8123169db3b
-lib/vendor.qti.hardware.radio.uim@1.1.so|bb57f63cd93fa632185b3c7b2f24c54a5cea8503
-lib/vendor.qti.hardware.radio.uim_remote_client@1.0.so|6fed5c85c801a5faf7fbfbf87f88f28fe1b2cb11
-lib/vendor.qti.hardware.radio.uim_remote_server@1.0.so|a62c40faae77f80b5b96283e3dfc4c67b79ae019
-lib64/vendor.qti.hardware.radio.am@1.0.so|ef6d56f7aa6ff13866ccb0c31c8ef96de503c17c
-lib64/vendor.qti.hardware.radio.ims@1.0.so|da51d4af0363ddca76292dde82857fb4862f4cd2
-lib64/vendor.qti.hardware.radio.ims@1.1.so|fd7bf0ab14637f67d56ba90aeb07030a138c1996
-lib64/vendor.qti.hardware.radio.ims@1.2.so|5e2b02e3fcb9d9c1a28f891a0780bc0078b41651
-lib64/vendor.qti.hardware.radio.ims@1.3.so|a090a9266d6253e747c174d14fd7b874b46b2379
-lib64/vendor.qti.hardware.radio.ims@1.4.so|7cf2168cda90e908818d438c1585507aabf35219
-lib64/vendor.qti.hardware.radio.lpa@1.0.so|52abf00004868bb1c2f149a7ea2b7bbc8fc399d7
-lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so|80507e4b36396686aea0c8ff7d3c28163efea846
-lib64/vendor.qti.hardware.radio.qtiradio@1.0.so|5c93dad4ae3fa8df677ad44a22045235a91238e2
-lib64/vendor.qti.hardware.radio.qtiradio@2.0.so|f3727b8015f85e1f22c9da1d46d1b5b8031f2f45
-lib64/vendor.qti.hardware.radio.uim@1.0.so|bb50c50890a37131579d56e547eccfce6e1ac527
-lib64/vendor.qti.hardware.radio.uim@1.1.so|b3cc0c6d4eaf6db13ac37118e0b812e8910af002
-lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so|f3a3051e4a904268e349a8b5adc91b748e8e0ade
-lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so|ab552724f7d723a70a4e730dba52ab220d33a33e
-lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so|8ad1c06563a4e5cd57eec16ade2509e9647fc8fb
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|d1d3adfe6eff32a3013e146317324029181e3c4a
 vendor/bin/netmgrd|3925e0023817782852b6a036164616a2d5dd0d4a
 vendor/bin/qti|db3cdf088d1e81f79cf9739817ae4adff4309f86
