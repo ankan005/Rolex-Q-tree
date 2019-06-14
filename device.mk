@@ -213,11 +213,6 @@ PRODUCT_PACKAGES += \
     android.hidl.manager@1.0_vendor \
     android.hidl.manager@1.0-java
 
-# HWUI
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilts/system/lib/libhwui.so:system/lib/libhwui.so \
-    $(LOCAL_PATH)/prebuilts/system/lib64/libhwui.so:system/lib64/libhwui.so
-
 # Input
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/ft5346.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/ft5346.kl \
