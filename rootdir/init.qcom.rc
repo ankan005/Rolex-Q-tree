@@ -48,9 +48,6 @@ on init
 
     start graphics-sh
 
-    # Quick Charge
-    setprop persist.usb.hvdcp.detect true
-
 on post-fs
     chmod 0755 /sys/kernel/debug/tracing
 
@@ -586,11 +583,6 @@ service vendor.ril-daemon2 /vendor/bin/hw/rild -c 2
     user radio
     group radio cache inet misc audio sdcard_r sdcard_rw diag log
     capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW
-
-service hvdcp /vendor/bin/hvdcp
-    class core
-    user root
-    group root
 
 service charger /charger
     class charger
