@@ -755,5 +755,16 @@
          should also be hidden if intended to be permanent. --> 
     <item name="config_appTransitionAnimationDurationScaleDefault" format="float" type="dimen">0.5</item>
 
+    <integer name="config_num_physical_slots">2</integer>
+
+    <!-- Whether device has physical tri state switch -->
+    <bool name="config_hasAlertSlider">true</bool>
+
+     <!-- The location of the devices physical tri state switch
+         0: Left side
+         1: Right side -->
+    <integer name="config_alertSliderLocation">1</integer>
+
+
 </resources>
 
