@@ -20,6 +20,12 @@ user: AID_BLUETOOTH
 group: AID_BLUETOOTH
 caps: BLOCK_SUSPEND
 
+[AID_VENDOR_QRTR]
+value:2906
+
+[AID_VENDOR_THERMAL]
+value:2907
+
 [vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti]
 mode: 0755
 user: AID_BLUETOOTH
