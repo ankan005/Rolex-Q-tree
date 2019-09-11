@@ -307,6 +307,10 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
     $(DEVICE_PATH)/configs/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml
 
+# Qualcomm support
+PRODUCT_USES_QCOM_HARDWARE += true
+PRODUCT_BOARD_PLATFORM += msm8937
+
 # RCS
 PRODUCT_PACKAGES += \
     rcs_service_aidl \
