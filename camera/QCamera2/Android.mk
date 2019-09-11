@@ -76,6 +76,7 @@ else
 LOCAL_CFLAGS += -std=c++11 -std=gnu++0x
 endif
 
+LOCAL_CFLAGS += -std=c++14 -std=gnu++1z -Wno-error
 #HAL 1.0 Flags
 LOCAL_CFLAGS += -DDEFAULT_DENOISE_MODE_ON -DHAL3 -DQCAMERA_REDEFINE_LOG
 
