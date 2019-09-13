@@ -1897,6 +1897,10 @@ vendor/firmware/cpp_firmware_v1_8_0.fw:vendor/firmware/cpp_firmware_v1_8_0.fw|26
 vendor/firmware/cpp_firmware_v1_10_0.fw:vendor/firmware/cpp_firmware_v1_10_0.fw|cf9458601aa4bbe9c57acfc1c7d0f158386ace9f
 vendor/firmware/cpp_firmware_v1_12_0.fw:vendor/firmware/cpp_firmware_v1_12_0.fw|de18ccdf371824059acfdf3c7754c6e1bc1c2f8c
 
+# Bluetooth (aptX) - from crosshatch - QP1A.190711.020
+product/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
+product/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
+
 # Consumer IR - from rolex
 vendor/lib/hw/consumerir.default.so:vendor/lib/hw/consumerir.default.so|b2e014de968f65e013b4dae3fad67f16aa3b0a09
 vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.default.so|bed46204c8200d5f0ec1b37c14ecbc06f424db93
