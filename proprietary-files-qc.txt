@@ -397,18 +397,67 @@ vendor/lib64/libmm-qdcm.so|b247b012b617822e69e4c0a66d5c9bd7df7023c0
 vendor/lib64/librs_adreno.so|ecc200e64d777b428de3ba998546087f2c3870b9
 vendor/lib64/librs_adreno_sha1.so|d5a5908c7b6f716399b766412baea333c69c8bc6
 
-# Graphics (HDR) - from TA-1024
-vendor/lib/libhdr_tm.so|b9fbe106918a2f1396876d5ad867895ef8bd0f5a
-vendor/lib64/libhdr_tm.so|ac97a8b5d883715fea476371a59a9422a99b073a
+# Graphics - from X00HD_4 - PKQ1.181203.001-16.0200.1907.18-20190817
+vendor/lib/egl/eglSubDriverAndroid.so
+vendor/lib/egl/libEGL_adreno.so
+vendor/lib/egl/libGLESv1_CM_adreno.so
+vendor/lib/egl/libGLESv2_adreno.so
+vendor/lib/egl/libq3dtools_adreno.so
+vendor/lib/egl/libq3dtools_esx.so
+vendor/lib/egl/libQTapGLES.so
+vendor/lib/hw/vulkan.msm8937.so
+vendor/lib/libadreno_utils.so
+vendor/lib/libbccQTI.so
+vendor/lib/libC2D2.so
+vendor/lib/libc2d30_bltlib.so
+vendor/lib/libc2d30-a3xx.so
+vendor/lib/libCB.so
+vendor/lib/libgsl.so
+vendor/lib/libhdr_tm.so
+vendor/lib/libllvm-glnext.so
+vendor/lib/libllvm-qcom.so
+vendor/lib/libmm-hdcpmgr.so
+vendor/lib/libOpenCL.so
+vendor/lib/librs_adreno_sha1.so
+vendor/lib/librs_adreno.so
+vendor/lib/libRSDriver_adreno.so
+vendor/lib/libscalar.so
+vendor/lib64/egl/eglSubDriverAndroid.so
+vendor/lib64/egl/libEGL_adreno.so
+vendor/lib64/egl/libGLESv1_CM_adreno.so
+vendor/lib64/egl/libGLESv2_adreno.so
+vendor/lib64/egl/libq3dtools_adreno.so
+vendor/lib64/egl/libq3dtools_esx.so
+vendor/lib64/egl/libQTapGLES.so
+vendor/lib64/hw/vulkan.msm8937.so
+vendor/lib64/libadreno_utils.so
+vendor/lib64/libbccQTI.so
+vendor/lib64/libC2D2.so
+vendor/lib64/libc2d30_bltlib.so
+vendor/lib64/libc2d30-a3xx.so
+vendor/lib64/libCB.so
+vendor/lib64/libgsl.so
+vendor/lib64/libhdr_tm.so
+vendor/lib64/libllvm-glnext.so
+vendor/lib64/libllvm-qcom.so
+vendor/lib64/libmm-hdcpmgr.so
+vendor/lib64/libOpenCL.so
+vendor/lib64/libpdmapper.so
+vendor/lib64/librs_adreno_sha1.so
+vendor/lib64/librs_adreno.so
+vendor/lib64/libRSDriver_adreno.so
+vendor/lib64/libscalar.so
+
+# Graphics (HDR) - from tissot - PKQ1.180917.001.V10.0.4.0.PDHMIXM
+vendor/lib/libhdr_tm.so|8060a5d9ed0283c7b89716165ba8af4b86ef0210
+vendor/lib64/libhdr_tm.so|df15d487e73560f81017bcf4a73c28c9697b1ed9
 
 # Graphics (SDM) - LA.UM.7.5.r1-03700-8x96.0
-vendor/lib/libscalar.so|cad128a6e71195b4ad38494bc0382bf80e1fb0b2
 vendor/lib/libsdm-color.so|b13ab5f965f5bb8f40207879415cb1adbb55da42
 vendor/lib/libsdm-diag.so|e2e3a0fba39190c58bafa0568e8cd51b391b71b6
 -vendor/lib/libsdm-disp-vndapis.so|6c4233ea3676643bc9658c25cfad7edd45c49362
 vendor/lib/libsdmextension.so|a8659e7e0df5f1e20266ede1331da0660e0fe260
 vendor/lib/libtinyxml2_1.so|3882fddae942997be6ad6af789cf209fa45e61b3
-vendor/lib64/libscalar.so|490cc7447863b3279771ad99e92a5625525db055
 vendor/lib64/libsdm-color.so|9bb3f5147c277eae08c7f918e7de3bd2fccf1f74
 vendor/lib64/libsdm-diag.so|7ab5d2a980029ac9bd20fe68656823b21e483e11
 -vendor/lib64/libsdm-disp-vndapis.so|6ae24866bbd413ed112778650c8fd7a2631cb1a9
