@@ -21,6 +21,8 @@ $(call inherit-product, vendor/ion/config/common_full_phone.mk)
 
 PRODUCT_NAME := ion_rolex
 BOARD_VENDOR := Xiaomi
+TARGET_GAPPS_ARCH := arm64
+TARGET_DENSITY := xhdpi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
