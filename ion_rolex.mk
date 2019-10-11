@@ -17,9 +17,9 @@
 $(call inherit-product, device/xiaomi/rolex/full_rolex.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/cos/config/common.mk)
+$(call inherit-product, vendor/ion/config/common_full_phone.mk)
 
-PRODUCT_NAME := cos_rolex
+PRODUCT_NAME := ion_rolex
 BOARD_VENDOR := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi

@@ -14,7 +14,7 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cos__rolex.mk
+    $(LOCAL_DIR)/ion_rolex.mk
 
 COMMON_LUNCH_CHOICES := \
-    cos_rolex-userdebug
+    ion_rolex-userdebug

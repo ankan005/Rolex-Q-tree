@@ -28,8 +28,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
-PRODUCT_ENFORCE_RRO_TARGETS := \
-    framework-res
+#PRODUCT_ENFORCE_RRO_TARGETS := \
+#    framework-res
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
@@ -453,5 +453,5 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/prima/WCNSS_qcom_cfg.ini
 
 # Wi-Fi Display
-PRODUCT_BOOT_JARS += \
-     WfdCommon
+#PRODUCT_BOOT_JARS += \
+#     WfdCommon
