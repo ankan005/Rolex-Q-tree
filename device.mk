@@ -386,11 +386,10 @@ PRODUCT_PACKAGES += \
 
 # Telephony
 PRODUCT_PACKAGES += \
-    ims-ext-common_system \
-    telephony-ext
+    telephony-ext \
+    ims-ext-common
 
 PRODUCT_BOOT_JARS += \
-    ims-ext-common_system \
     telephony-ext
 
 # Seccomp policy
