@@ -162,6 +162,9 @@ TARGET_USERIMAGES_USE_F2FS := true
 BOARD_HAVE_QCOM_FM := true
 TARGET_QCOM_NO_FM_FIRMWARE := true
 
+# Gestures
+TARGET_GESTURES_NODE := "/proc/touchpanel/gesture_enable"
+
 # GPS
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE :=default
 USE_DEVICE_SPECIFIC_GPS := true
