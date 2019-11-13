@@ -182,7 +182,7 @@ JAVA_SOURCE_OVERLAYS := org.lineageos.hardware|$(DEVICE_PATH)/lineagehw|**/*.jav
 TARGET_PROVIDES_LIBLIGHT := true
 
 # Tap2Wake
-TARGET_TAP_TO_WAKE_NODE := "/proc/gesture/onoff"
+#TARGET_TAP_TO_WAKE_NODE := "/proc/gesture/onoff"
 
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
@@ -209,6 +209,10 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
 
 # Peripheral manager
 TARGET_PER_MGR_ENABLED := true
+
+# Power
+TARGET_USES_NON_LEGACY_POWERHAL := true
+TARGET_USES_INTERACTION_BOOST := false
 
 # Qualcomm
 BOARD_USES_QCOM_HARDWARE := true
@@ -259,3 +263,6 @@ WIFI_HIDL_FEATURE_DISABLE_AP_MAC_RANDOMIZATION := true
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/rolex/BoardConfigVendor.mk
+
+# DT2W
+TARGET_TAP_TO_WAKE_NODE := "/sys/android_touch/doubletap2wake"
