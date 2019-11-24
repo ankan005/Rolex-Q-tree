@@ -66,7 +66,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 debug.egl.hw=0 \
 debug.sf.hw=0 \
 debug.sf.disable_hwc_vds=1 \
-debug.sf.recomputecrop=0 \
 debug.sf.latch_unsignaled=1 \
 debug.cpurend.vsync=false \
 debug.sf.disable_backpressure=1 \
@@ -225,6 +224,15 @@ vendor.rild.libpath=/vendor/lib64/libril-qc-qmi-1.so
 # RescueParty
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.sys.disable_rescue=true
+
+# Rendering
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.enable.sglscale=1 \
+    debug.egl.hw=1 \
+    debug.sf.disable_hwc=0 \
+    debug.sf.recomputecrop=0 \
+    persist.hwc.ptor.enable=true \
+    debug.sf.gpu_comp_tiling=1
 
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
