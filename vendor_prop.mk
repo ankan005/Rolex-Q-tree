@@ -270,3 +270,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Start in global mode
 ro.telephony.default_network=22,20
 persist.sys.fflag.override.settings_network_and_internet_v2=true
+
+#Density
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.display.lcd_density=399
