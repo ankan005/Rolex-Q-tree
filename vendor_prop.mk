@@ -261,3 +261,8 @@ ro.config.zram=true
 # Create Swap disk, if below sys-prop enabled & also if device has lower (< 1 GB) RAM
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.config.swap=true
+
+# VoLTE hax
+PRODUCT_PROPERTY_OVERRIDES += \
+   persist.dbg.volte_avail_ovr=1 \
+   persist.dbg.vt_avail_ovr=1
