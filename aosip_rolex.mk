@@ -30,5 +30,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="rolex-user 7.1.2 N2G47H V9.2.6.0.NCCMIEK release-keys"
 
 # Set BUILD_FINGERPRINT variable
-BUILD_FINGERPRINT := "Xiaomi/rolex/rolex:8.0.0/OPR1.170623.032/02281230:user/release-keys"
+BUILD_FINGERPRINT := "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys"
 
