@@ -33,6 +33,9 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 #PRODUCT_ENFORCE_RRO_TARGETS := \
 #    framework-res
 
+# Setting vendor SPL
+VENDOR_SECURITY_PATCH := "2019-09-05"
+
 # Preopt SystemUI
 PRODUCT_DEXPREOPT_SPEED_APPS += SystemUI
 
