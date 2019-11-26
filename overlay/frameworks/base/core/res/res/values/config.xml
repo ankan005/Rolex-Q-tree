@@ -738,57 +738,6 @@
     <!-- Whether device ignores the RSSNR signal implementation -->
     <bool name="config_ignoreRssnrSignalLevel">true</bool>
 
-    <!-- Whether to intercept inputs on screen off -->
-    <bool name="config_enableKeyHandler">true</bool>
-
-    <!-- Gestures' key codes. If the gesture is not supported set it to 0. -->
-    <integer name="config_doubleTapKeyCode">143</integer>
-    <integer name="config_drawVKeyCode">252</integer>
-    <integer name="config_drawInverseVKeyCode">255</integer>
-    <integer name="config_drawOKeyCode">250</integer>
-    <integer name="config_drawMKeyCode">247</integer>
-    <integer name="config_drawWKeyCode">246</integer>
-    <integer name="config_drawSKeyCode">248</integer>
-    <integer name="config_drawArrowLeftKeyCode">253</integer>
-    <integer name="config_drawArrowRightKeyCode">254</integer>
-    <integer name="config_twoFingerSwipeKeyCode">251</integer>
-
-    <!-- Default settings for gestures
-             0 - Disabled
-             1 - Wake device
-             2 - Toggle flashlight
-             3 - Toggle airplane mode
-             4 - Play/Pause music
-             5 - Next music
-             6 - Previous music
-             7 - Open camera
-             8 - Open dialer -->
-    <integer name="config_doubleTapDefault">1</integer>
-    <integer name="config_drawVDefault">2</integer>
-    <integer name="config_drawODefault">7</integer>
-    <integer name="config_twoFingerSwipeDefault">4</integer>
-    <integer name="config_drawArrowLeftDefault">6</integer>
-    <integer name="config_drawArrowRightDefault">5</integer>
-
-    <!-- Whether or not swipe up gesture's opt-in setting is available on this device -->
-    <bool name="config_swipe_up_gesture_setting_available">true</bool>
-
-    <!-- The default value for transition animation scale found in developer settings.
-         1.0 corresponds to 1x animator scale, 0 means that there will be no transition
-         animations. Note that this is only a default and will be overridden by a
-         user-set value if toggled by settings so the "Transition animation scale" setting
-         should also be hidden if intended to be permanent. --> 
-    <item name="config_appTransitionAnimationDurationScaleDefault" format="float" type="dimen">0.5</item>
-
-    <!-- Whether device has physical tri state switch -->
-    <bool name="config_hasAlertSlider">true</bool>
-
-     <!-- The location of the devices physical tri state switch
-         0: Left side
-         1: Right side -->
-    <integer name="config_alertSliderLocation">1</integer>
-
-
     <!-- Whether or not we should show vendor mismatch message -->
     <bool name="config_show_vendor_mismatch_message">false</bool>
 
@@ -805,5 +754,6 @@
 
     <!-- Component name of the default wallpaper. This will be ImageWallpaper if not specified -->
     <string name="default_wallpaper_component" translatable="false">com.breel.wallpapers19/com.breel.wallpapers19.doodle.wallpaper.variations.DoodleWallpaperV1</string>
+
 </resources>
 

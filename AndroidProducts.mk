@@ -14,7 +14,7 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosip_rolex.mk
+    $(LOCAL_DIR)/havoc_rolex.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosip_rolex-userdebug
+    havoc_rolex-userdebug
