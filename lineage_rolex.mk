@@ -17,9 +17,9 @@
 $(call inherit-product, device/xiaomi/rolex/full_rolex.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := havoc_rolex
+PRODUCT_NAME := lineage_rolex
 BOARD_VENDOR := Xiaomi
 TARGET_GAPPS_ARCH := arm64
 TARGET_DENSITY := xhdpi
