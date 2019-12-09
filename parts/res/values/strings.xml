@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-     Copyright (C) 2018 The LineageOS Project
+<!-- Copyright (C) 2014-2017 The OmniROM Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,50 +13,55 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
-    <!-- Dirac settings -->
-    <string name="dirac_title">Mi Sound Enhancer</string>
-    <string name="dirac_summary">Optimize audio quality</string>
-    <string name="dirac_headset_title">Choose headphones type</string>
-    <string name="dirac_preset_title">Choose a preset</string>
 
-    <!-- Dirac settings: Headset types -->
-    <string name="dirac_headset_default">Default</string>
-    <string name="dirac_headset_earbuds">Mi Earbuds</string>
-    <string name="dirac_headset_in_ear_2013">Mi In-Ear (2013)</string>
-    <string name="dirac_headset_piston_1">Mi Piston-1</string>
-    <string name="dirac_headset_general">General</string>
-    <string name="dirac_headset_general_inear">General In-Ear</string>
-    <string name="dirac_headset_piston_basic">Basic Edition</string>
-    <string name="dirac_headset_piston_2">Mi Piston-2</string>
-    <string name="dirac_headset_piston_standard">Standard Edition</string>
-    <string name="dirac_headset_headphone">Mi Headphones</string>
-    <string name="dirac_headset_piston_youth">Youth Edition</string>
-    <string name="dirac_headset_piston_color">Color Edition</string>
-    <string name="dirac_headset_in_ear">Mi In-Ear</string>
-    <string name="dirac_headset_capsule">Mi Capsule</string>
-    <string name="dirac_headset_in_ear_pro">Mi In-Ear Pro</string>
-    <string name="dirac_headset_comfort">Mi Comfort</string>
-    <string name="dirac_headset_reduction_noise">Mi Noise Cancelling Type-C</string>
-    <string name="dirac_headset_cancelling">Mi Noise Cancelling 3.5mm</string>
-    <string name="dirac_headset_half_in_ear">Mi Half In-Ear</string>
-    <string name="dirac_headset_in_ear2">Mi In-Ear 2</string>
-    <string name="dirac_headset_earphone_basic">Mi Earphones Basic</string>
-    <string name="dirac_headset_earphone">Mi Earphones</string>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Advanced Setting</string>
+    <string name="advanced_settings">Advanced Setting</string>
+    <string name="advanced_settings_summary">Advanced</string>
 
-    <!-- Dirac settings: Equalizer presets -->
-    <string name="dirac_preset_default">Default</string>
-    <string name="dirac_preset_rock">Rock</string>
-    <string name="dirac_preset_jazz">Jazz</string>
-    <string name="dirac_preset_pop">Pop</string>
-    <string name="dirac_preset_classical">Classical</string>
-    <string name="dirac_preset_hiphop">Hip Hop</string>
-    <string name="dirac_preset_blues">Blues</string>
-    <string name="dirac_preset_electronic">Electronic</string>
-    <string name="dirac_preset_country">Country</string>
-    <string name="dirac_preset_dance">Dance</string>
-    <string name="dirac_preset_metal">Metal</string>
+    <string name="display_title">Display</string>
+    <string name="device_doze_title">Ambient display</string>
 
-     <!-- QS tile title -->
-    <string name="dirac_qs_tile_title">Dirac sound</string>
+    <!-- s2s -->
+    <string name="s2s_title">Sweep to sleep</string>
+    <string name="s2s_title_head">Sweep to sleep gesture</string>
+    <string name="s2s_title_summary">Swipe gesture sleep at the bottom of the screen</string>
+    <string name="s2s_vib_strength_title_head">Sweep2sleep vibration</string>
+
+    <!-- Kcal -->
+    <string name="kcal_title">Display color</string>
+    <string name="kcal_summary">Display color calibration using KCAL</string>
+    <string name="kcal_enabled_title">Enable KCAL</string>
+    <string name="kcal_enabled_summary">Turn on display calibration using KCAL</string>
+    <string name="kcal_red">Red</string>
+    <string name="kcal_green">Green</string>
+    <string name="kcal_blue">Blue</string>
+    <string name="kcal_saturation">Saturation</string>
+    <string name="kcal_contrast">Contrast</string>
+    <string name="menu_reset">Reset</string>
+    <string name="kcal_color_temp">Color temperature (K)</string>
+
+    <!-- Spectrum Profiles -->
+    <string name="spectrum_profile_title">Kernel Profiles</string>
+    <string name="spectrum_title">Kernel Profile</string>
+    <string name="spectrum_summary">Choose your kernel profile</string>
+    <string name="spectrum_dialogTitle">Choose your kernel profile</string>
+
+    <!-- Swap HW buttons -->
+    <string name="hw_buttons_title">Hardware buttons</string>
+    <string name="swap_hw_buttons_title">Swap buttons</string>
+    <string name="swap_hw_buttons_summary">Swap the order of recents and back buttons</string>
+
+    <!-- Button brightness -->
+    <string name="btn_title">Buttons</string>
+
+    <!-- usb fastcharge -->
+    <string name="usb_fastcharge_title">USB Fastcharge</string>
+    <string name="fastcharge_title">Enable USB Fastcharge</string>
+    <string name="fastcharge_summary">Enable to use fastcharge when connected to an computer USB 3.X</string>
+
+    <string name="seekbar_no_default_value">No default value set</string>
+    <string name="seekbar_default_value_set">Value set to default of <xliff:g id="number">%d</xliff:g></string>
+    <string name="seekbar_default_value_already_set">Default value is already set</string>
+
 </resources>
