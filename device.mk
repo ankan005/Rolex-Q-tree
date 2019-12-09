@@ -339,10 +339,11 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-   android.hardware.power@1.2-service-qti
+    power.qcom
 
-#power
-TARGET_USES_NON_LEGACY_POWERHAL := true
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.0-impl \
+    android.hardware.power@1.0-service
 
 # Ramdisk
 PRODUCT_PACKAGES += \
