@@ -1,0 +1,20 @@
+allow init adsprpcd_file:filesystem { mount relabelfrom relabelto getattr };
+
+allow init firmware_file:filesystem getattr;
+allow init bt_firmware_file:filesystem getattr;
+
+allow init sysfs:file setattr;
+allow init sysfs_dm:file { write setattr };
+allow init sysfs_kgsl:file setattr;
+
+allow init hidl_base_hwservice:hwservice_manager add;
+
+allow init hal_graphics_composer_default:binder call;
+allow init hwservicemanager:binder transfer;
+
+allow init sysfs_kgsl:lnk_file read;
+
+allow init hwservicemanager:binder { call transfer };
+
+# spectrum
+allow init sysfs_devices_system_cpu:file write;
