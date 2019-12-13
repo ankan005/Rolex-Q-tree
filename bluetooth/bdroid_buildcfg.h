@@ -1,6 +1,5 @@
-/**
- * Copyright (C) 2012 The Android Open Source Project
- * Copyright (C) 2016 The CyanogenMod Project
+/*
+ * Copyright (C) 2015 The CyanogenMod Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,8 +16,7 @@
 
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
-
-#define BTM_DEF_LOCAL_NAME   "Xiaomi Redmi 3S"
+#define BTM_DEF_LOCAL_NAME   "Xiaomi Redmi 4A"
 
 // Disables read remote device feature
 #define MAX_ACL_CONNECTIONS   16
@@ -27,10 +25,7 @@
 #define BTM_SCO_ENHANCED_SYNC_ENABLED FALSE
 
 // skips conn update at conn completion
-#define BT_CLEAN_TURN_ON_DISABLED 1
-#define BTA_DISABLE_DELAY 1000 /* in milliseconds */
-#define BTM_WBS_INCLUDED TRUE
-#define BTIF_HF_WBS_PREFERRED TRUE
+#define BT_CLEAN_TURN_ON_DISABLED TRUE
 
 /* Increasing SEPs to 12 from 6 to support SHO/MCast i.e. two streams per codec */
 #define AVDT_NUM_SEPS 12
