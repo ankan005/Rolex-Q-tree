@@ -169,7 +169,8 @@ vendor.vidc.disable.split.mode=1 \
 vendor.vidc.enc.disable.pq=true \
 media.settings.xml=/vendor/etc/media_profiles_V1_0.xml \
 vendor.video.disable.ubwc=1 \
-mm.enable.sec.smoothstreaming=true
+mm.enable.sec.smoothstreaming=true \
+vendor.display.enable_default_color_mode=0
 
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
