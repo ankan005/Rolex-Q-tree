@@ -237,6 +237,7 @@ on post-fs-data
     write /sys/block/dm-2/queue/read_ahead_kb 2048
 
 on property:sys.boot_completed=1
+    write /proc/gesture/onoff 1
     start qcom-post-boot
 
     write /dev/kmsg "Boot completed "
