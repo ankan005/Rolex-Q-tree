@@ -15,6 +15,10 @@
 # limitations under the License.
 #
 
+PRODUCT_SOONG_NAMESPACES += \
+    device/xiaomi/rolex \
+    vendor/xiaomi
+
 DEVICE_PATH := device/xiaomi/rolex
 
 # Overlay
