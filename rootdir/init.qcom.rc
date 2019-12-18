@@ -164,10 +164,6 @@ on boot
     # Allow access for CCID command/response timeout configuration
     chown system system /sys/module/ccid_bridge/parameters/bulk_msg_timeout
 	
-	# DT2W
-    chmod 0666 /sys/android_touch/doubletap2wake
-    chown system system /sys/android_touch/doubletap2wake
-
     # Glove Mode
     chown system system /sys/class/tp_glove/device/glove_enable
     chmod 0660 /sys/class/tp_glove/device/glove_enable
@@ -499,6 +495,10 @@ service vendor.sensors.qti /vendor/bin/sensors.qti
 
 on property:ro.vendor.use_data_netmgrd=false
     stop vendor.netmgrd
+
+# DT2W
+     chmod 0660 /proc/gesture/onoff
+     chown system system /proc/gesture/onoff
 
 # Adjust socket buffer to enlarge TCP receive window for high bandwidth
 # but only if ro.data.large_tcp_window_size property is set.
