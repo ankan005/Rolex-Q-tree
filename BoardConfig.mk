@@ -20,6 +20,8 @@ ifneq ($(TARGET_BUILD_VARIANT),user)
 SELINUX_IGNORE_NEVERALLOWS := true
 endif
 
+# Disable qmi EAP-SIM security
+DISABLE_EAP_PROXY := true
 
 # Architecture
 TARGET_ARCH := arm64
