@@ -99,13 +99,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
-    debug.egl.hw=1 \
+    debug.egl.hw=0 \
     debug.cpurend.vsync=false \
     debug.gralloc.gfx_ubwc_disable=0 \
-    debug.hwui.use_buffer_age=false \
     debug.sdm.support_writeback=0 \
     debug.sf.disable_backpressure=1 \
-    debug.sf.hw=1 \
+    debug.sf.hw=0 \
     debug.sf.latch_unsignaled=1 \
     debug.sf.recomputecrop=0 \
     dev.pm.dyn_samplingrate=1 \
@@ -115,7 +114,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.disable_rotator_split=1 \
     vendor.display.disable_skip_validate=1 \
     vendor.display.perf_hint_window=50 \
-    vendor.gralloc.enable_fb_ubwc=1
+    vendor.gralloc.enable_fb_ubwc=1 \
+    debug.enable.sglscale=1
+
+#Enable B service adj transition by default
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.qti.sys.fw.bservice_enable=true \
+    ro.vendor.qti.sys.fw.bservice_limit=5 \
+    ro.vendor.qti.sys.fw.bservice_age=5000
 
 # IMS
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -173,10 +179,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.sys.fw.trim_empty_percent=100 \
     ro.vendor.qti.sys.fw.trim_cache_percent=100 \
     ro.vendor.qti.sys.fw.trim_enable_memory=2147483648
-
-# UI
-PRODUCT_PROPERTY_OVERRIDES += \
-    sys.use_fifo_ui=1
 
 # Usb
 PRODUCT_PROPERTY_OVERRIDES += \
