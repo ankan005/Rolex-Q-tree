@@ -60,7 +60,12 @@ persist.vendor.qti.telephony.vt_cam_interface=1
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.vendor.cne.feature=1
 
-# Coresight
+# Core control
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.qti.core_ctl_min_cpu=2 \
+    ro.vendor.qti.core_ctl_max_cpu=4
+
+# Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.debug.coresight.config=stm-events
 
