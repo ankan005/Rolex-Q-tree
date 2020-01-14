@@ -76,8 +76,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapstartsize=16m \
-    dalvik.vm.heapgrowthlimit=256m \
-    dalvik.vm.heapsize=512m \
+    dalvik.vm.heapgrowthlimit=192m \
+    dalvik.vm.heapsize=384m \
     dalvik.vm.heaptargetutilization=0.75 \
     dalvik.vm.heapminfree=4m \
     dalvik.vm.heapmaxfree=8m
@@ -86,7 +86,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196608 \
     ro.vendor.display.cabl=2 \
-    ro.sf.lcd_density=295 \
+    ro.sf.lcd_density=320 \
     vendor.display.enable_default_color_mode=1
 
 # Fm
@@ -104,13 +104,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
-    debug.egl.hw=1 \
+    debug.egl.hw=0 \
     debug.cpurend.vsync=false \
     debug.gralloc.gfx_ubwc_disable=0 \
-    debug.hwui.use_buffer_age=false \
     debug.sdm.support_writeback=0 \
     debug.sf.disable_backpressure=1 \
-    debug.sf.hw=1 \
+    debug.sf.hw=0 \
     debug.sf.latch_unsignaled=1 \
     debug.sf.recomputecrop=0 \
     dev.pm.dyn_samplingrate=1 \
@@ -153,7 +152,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.extension_library=libqti-perfd-client.so \
     ro.vendor.qti.sys.fw.bg_apps_limit=60 \
-    vendor.perf.gestureflingboost.enable=true
+    vendor.perf.gestureflingboost.enable=true \
+    ro.sys.fw.dex2oat_thread_count=4
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -178,10 +178,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.sys.fw.trim_empty_percent=100 \
     ro.vendor.qti.sys.fw.trim_cache_percent=100 \
     ro.vendor.qti.sys.fw.trim_enable_memory=2147483648
-
-# UI
-PRODUCT_PROPERTY_OVERRIDES += \
-    sys.use_fifo_ui=1
 
 # Usb
 PRODUCT_PROPERTY_OVERRIDES += \
