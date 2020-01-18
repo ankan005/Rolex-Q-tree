@@ -1986,3 +1986,7 @@ lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.default.so
 etc/qdcm_calib_data_hx8394F_HD720p_video_BOE_c3a.xml:vendor/etc/qdcm_calib_data_hx8394F_HD720p_video_BOE_c3a.xml
 etc/qdcm_calib_data_ili9881c_HD720p_video_Ebbg_c3a.xml:vendor/etc/qdcm_calib_data_ili9881c_HD720p_video_Ebbg_c3a.xml
 etc/qdcm_calib_data_nt35521s_HD720p_video_EBBG_c3a.xml:vendor/etc/qdcm_calib_data_nt35521s_HD720p_video_EBBG_c3a.xml
+
+# Graphics(adreno308) - from X00HD_4 - PKQ1.181203.001-16.0200.1907.18-20190817
+vendor/lib/egl/eglsubAndroid.so
+vendor/lib64/egl/eglsubAndroid.so
