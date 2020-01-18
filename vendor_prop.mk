@@ -96,6 +96,7 @@ vendor.gralloc.enable_fb_ubwc=1 \
 sys.display-size=1920x1080 \
 vendor.display.disable_skip_validate=1 \
 vendor.display.perf_hint_window=50 \
+debug.hwui.use_buffer_age=false \
 ro.sf.enable_fb_scaling=1 \
 persist.graphics.vulkan.disable=true \
 persist.debug.wfd.enable=1 \
@@ -111,7 +112,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 dalvik.vm.heapgrowthlimit=192m \
 dalvik.vm.heapmaxfree=8m \
 dalvik.vm.heapminfree=4m \
-dalvik.vm.heapsize=384 \
+dalvik.vm.heapsize=512m \
 dalvik.vm.heapstartsize=16m \
 dalvik.vm.heaptargetutilization=0.75 \
 dalvik.vm.boot-dex2oat-threads=8 \
@@ -188,8 +189,7 @@ ro.vendor.extension_library=libqti-perfd-client.so \
 ro.vendor.qti.am.reschedule_service=true \
 ro.vendor.qti.core_ctl_min_cpu=2 \
 ro.vendor.qti.core_ctl_max_cpu=4 \
-ro.am.reschedule_service=true \
-ro.sys.fw.dex2oat_thread_count=4
+ro.am.reschedule_service=true
 
 # Netmgrd
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -239,7 +239,7 @@ persist.sys.disable_rescue=true
 # Rendering
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.enable.sglscale=1 \
-    debug.egl.hw=0 \
+    debug.egl.hw=1 \
     debug.sf.disable_hwc=0 \
     debug.sf.recomputecrop=0 \
     persist.hwc.ptor.enable=true \
