@@ -1910,13 +1910,13 @@ vendor/etc/qdcm_calib_data_hx8394F_HD720p_video_BOE_c3a.xml:vendor/etc/qdcm_cali
 vendor/etc/qdcm_calib_data_ili9881c_HD720p_video_Ebbg_c3a.xml:vendor/etc/qdcm_calib_data_ili9881c_HD720p_video_Ebbg_c3a.xml
 vendor/etc/qdcm_calib_data_nt35521s_HD720p_video_EBBG_c3a.xml:vendor/etc/qdcm_calib_data_nt35521s_HD720p_video_EBBG_c3a.xml
 
-# Graphics firmware - from riva OPM1.171019.026 - 8.11.6
+# Graphics firmware - from X00HD_4 - PKQ1.181203.001-16.0200.1907.18-20190817
 vendor/firmware/a300_pfp.fw:vendor/firmware/a300_pfp.fw|899dbfad4812084971cfc1ff30f06a4b45c2d34c
 vendor/firmware/a300_pm4.fw:vendor/firmware/a300_pm4.fw|94529206b45b6e9f6ed30dadabe4244a88a60975
 vendor/firmware/a330_pfp.fw:vendor/firmware/a330_pfp.fw|3e2fcee7276ded819cf2d95864fdd6788a484ee1
 vendor/firmware/a330_pm4.fw:vendor/firmware/a330_pm4.fw|ae739ea812f9e4462d7bba8b9ead5782d4496618
 
 
-# Graphics (adreno 308) - from riva - OPM1.171019.026 - 8.11.6
-vendor/lib/egl/eglsubAndroid.so|47e624dc5dce36d730551090c708dd1aa7f83fc9
-vendor/lib64/egl/eglsubAndroid.so|2da54c43577e048f89a5eb16c52a63fc5d2629a5
+# Graphics(adreno308) - from X00HD_4 - PKQ1.181203.001-16.0200.1907.18-20190817
+vendor/lib/egl/eglsubAndroid.so
+vendor/lib64/egl/eglsubAndroid.so
