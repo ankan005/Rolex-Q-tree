@@ -503,6 +503,7 @@ else
     fi
 
     # Set allocstall_threshold to 0 for all targets.
+    echo 80 > /proc/sys/vm/swappiness
     echo 0 > /sys/module/vmpressure/parameters/allocstall_threshold
 
     # Disable wsf for all targets beacause we are using efk.
@@ -3804,7 +3805,7 @@ case "$target" in
 
             # Turn on sleep modes.
             echo 0 > /sys/module/lpm_levels/parameters/sleep_disabled
-            echo 100 > /proc/sys/vm/swappiness
+            echo 80 > /proc/sys/vm/swappiness
             ;;
         esac
     ;;
@@ -4356,7 +4357,7 @@ case "$target" in
 	echo N > /sys/module/lpm_levels/L3/l3-dyn-ret/idle_enabled
         # Turn on sleep modes.
         echo 0 > /sys/module/lpm_levels/parameters/sleep_disabled
-	echo 100 > /proc/sys/vm/swappiness
+	echo 80 > /proc/sys/vm/swappiness
 	echo 120 > /proc/sys/vm/watermark_scale_factor
     ;;
 esac
