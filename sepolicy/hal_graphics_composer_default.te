@@ -1,0 +1,1 @@
+allow hal_graphics_composer_defualt init:binder { call };
