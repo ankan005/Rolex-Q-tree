@@ -415,6 +415,28 @@ service vendor.contexthub-hal-1-0 /vendor/bin/hw/android.hardware.contexthub@1.0
     group system
     disabled
 
+# Modify by AMT.meng.lv,04/2/2019, update "vulkan and opengles issue between 8917 and 8937 chips"'s solution begin
+on property:ro.product.board=MSM8917
+    # vulkan related libs
+    symlink /vendor/lib/hw/8917/vulkan.msm8917.so                                  /mnt/product/factory/graphics/vulkan.msm8937.so
+    symlink /vendor/lib/8917/libllvm-qgl.msm8917.so                                /mnt/product/factory/graphics/libllvm-qgl.so
+    symlink /vendor/lib64/hw/8917/vulkan.msm8917.so                                /mnt/product/factory/graphics/vulkan.msm8937_64.so
+    symlink /vendor/lib64/8917/libllvm-qgl.msm8917.so                              /mnt/product/factory/graphics/libllvm-qgl_64.so
+
+on property:ro.product.board=MSM8937
+    # opengles aep feature config
+    symlink /vendor/etc/permissions/8937/android.hardware.opengles.aep.xml         /mnt/product/factory/graphics/android.hardware.opengles.aep.xml
+    # vulkan features config
+    symlink /vendor/etc/permissions/8937/android.hardware.vulkan.level-0.xml       /mnt/product/factory/graphics/android.hardware.vulkan.level-0.xml
+    symlink /vendor/etc/permissions/8937/android.hardware.vulkan.version-1_0_3.xml /mnt/product/factory/graphics/android.hardware.vulkan.version-1_0_3.xml
+    symlink /vendor/etc/permissions/8937/android.hardware.vulkan.version-1_1.xml   /mnt/product/factory/graphics/android.hardware.vulkan.version-1_1.xml
+    symlink /vendor/etc/permissions/8937/android.hardware.vulkan.compute-0.xml     /mnt/product/factory/graphics/android.hardware.vulkan.compute-0.xml
+    # vulkan related libs
+    symlink /vendor/lib/hw/8937/vulkan.msm8937.so                                  /mnt/product/factory/graphics/vulkan.msm8937.so
+    symlink /vendor/lib/8937/libllvm-qgl.so                                        /mnt/product/factory/graphics/libllvm-qgl.so
+    symlink /vendor/lib64/hw/8937/vulkan.msm8937.so                                /mnt/product/factory/graphics/vulkan.msm8937_64.so
+    symlink /vendor/lib64/8937/libllvm-qgl.so                                      /mnt/product/factory/graphics/libllvm-qgl_64.so
+
 on property:dev.bootcomplete=1
     swapon_all /vendor/etc/fstab.qcom
 
