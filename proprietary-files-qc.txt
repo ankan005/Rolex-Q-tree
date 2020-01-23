@@ -397,7 +397,7 @@ vendor/lib64/libmm-qdcm.so|b247b012b617822e69e4c0a66d5c9bd7df7023c0
 vendor/lib64/librs_adreno.so|ecc200e64d777b428de3ba998546087f2c3870b9
 vendor/lib64/librs_adreno_sha1.so|d5a5908c7b6f716399b766412baea333c69c8bc6
 
-# Graphics - from X00HD_4 - PKQ1.181203.001-16.0200.1907.18-20190817
+# Graphics - from zb555kl - PKQ1.181203.001-16.0200.1907.18-20190817
 vendor/lib/egl/eglSubDriverAndroid.so
 vendor/lib/egl/libEGL_adreno.so
 vendor/lib/egl/libGLESv1_CM_adreno.so
@@ -447,6 +447,19 @@ vendor/lib64/librs_adreno_sha1.so
 vendor/lib64/librs_adreno.so
 vendor/lib64/libRSDriver_adreno.so
 vendor/lib64/libscalar.so
+vendor/lib/hw/8917/vulkan.msm8917.so                                
+vendor/lib/8917/libllvm-qgl.msm8917.so                                
+vendor/lib64/hw/8917/vulkan.msm8917.so                    
+vendor/lib64/8917/libllvm-qgl.msm8917.so
+vendor/etc/permissions/8937/android.hardware.opengles.aep.xml
+vendor/etc/permissions/8937/android.hardware.vulkan.level-0.xml
+vendor/etc/permissions/8937/android.hardware.vulkan.version-1_0_3.xml
+vendor/etc/permissions/8937/android.hardware.vulkan.version-1_1.xml 
+vendor/etc/permissions/8937/android.hardware.vulkan.compute-0.xml 
+vendor/lib/hw/8937/vulkan.msm8937.so         
+vendor/lib/8937/libllvm-qgl.so
+vendor/lib64/hw/8937/vulkan.msm8937.so       
+vendor/lib64/8937/libllvm-qgl.so
 
 # Graphics (HDR) - from tissot - PKQ1.180917.001.V10.0.4.0.PDHMIXM
 vendor/lib/libhdr_tm.so|8060a5d9ed0283c7b89716165ba8af4b86ef0210
