@@ -426,8 +426,8 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-service
 
 # VNDK-SP:
-PRODUCT_PACKAGES += \
-    vndk-sp
+#PRODUCT_PACKAGES += \
+  #  vndk-sp
 
 # Wallpapers
 PRODUCT_PACKAGES += \
