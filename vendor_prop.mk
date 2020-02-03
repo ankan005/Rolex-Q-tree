@@ -61,6 +61,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.gyro.android=1 \
     persist.vendor.camera.HAL3.enabled=1 \
     persist.vendor.camera.is_type=1 \
+    sys.display-size=1920x1080 \
     vendor.camera.hal1.packagelist=com.whatsapp,com.intsig.camscanner,com.instagram.android,com.snapchat.android \
     vidc.enc.dcvs.extra-buff-count=2
 
